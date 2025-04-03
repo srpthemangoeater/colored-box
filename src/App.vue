@@ -60,14 +60,14 @@ onUnmounted(() => {
 
 .box {
   background: #FFFFFF;
-  box-shadow: 0px 10px 0px #0000003c;
+  box-shadow: 0px 10px 0px #42093d3c;
   border-radius: 1rem;
   color: black !important;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding: 1.5rem 2rem;
+  padding: 1.2rem 2rem;
   gap: 5px;
 
   width: 100%;
@@ -79,6 +79,7 @@ onUnmounted(() => {
   width: 100%;
   aspect-ratio: 1 / 1;
   border: none;
+  margin: 10px;
 }
 
 .colored-box:focus {
@@ -87,8 +88,10 @@ onUnmounted(() => {
 
 .color-select .color-list {
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
   gap: 1rem;
+  justify-content: center;
+  max-width: calc(40px * 4 + 1rem * 3);
 }
 
 .color-each {
