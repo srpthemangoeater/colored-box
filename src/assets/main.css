@@ -16,6 +16,8 @@ body {
   display: flex;
   flex-direction: column;
 
+  width: 300px;
+
   align-items: center;
   justify-content: center;
 }
@@ -26,15 +28,22 @@ h3,
 p {
   margin: 0px;
   padding: 0px;
-}
-
-h1,
-h3 {
-  font-family: 'Noto Sans Thai', sans-serif;
+  text-align: left;
+  width: 100%;
+  font-family: sans-serif;
 }
 
 h1 {
-  font-weight: bold;
+  font-size: 28px;
+  line-height: 33px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+h3 {
+  font-size: 14px;
 }
 
 p {
