@@ -33,7 +33,8 @@ onUnmounted(() => {
 <template>
   <div class="page-container">
     <div class="box">
-      <button class="colored-box" :style="{ backgroundColor: selectedColor }" @click.stop="toggleColorSelect"></button>
+      <button class="colored-box" :class="{ 'red-outline': showColorSelect }"
+        :style="{ backgroundColor: selectedColor }" @click="toggleColorSelect"></button>
       <h1>Space & Winter</h1>
       <h3>Sleek and Modern</h3>
     </div>
@@ -60,7 +61,7 @@ onUnmounted(() => {
 
 .box {
   background: #FFFFFF;
-  box-shadow: 0px 10px 0px #42093d3c;
+  box-shadow: 0px 10px 0px #0000003c;
   border-radius: 1rem;
   color: black !important;
   display: flex;
@@ -82,7 +83,11 @@ onUnmounted(() => {
   margin: 10px;
 }
 
-.colored-box:focus {
+.color-list .colored-box:focus {
+  outline: red 2px solid;
+}
+
+.red-outline {
   outline: red 2px solid;
 }
 
